@@ -1,0 +1,65 @@
+{
+  "name": "react-utterances-github-comments",
+  "version": "1.0.0",
+  "description": "A lightweight React wrapper for Utterances GitHub comment system",
+  "main": "dist/cjs/GithubComments.min.js",
+  "module": "dist/esm/GithubComments.min.js",
+  "types": "dist/types/GithubComments.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/GithubComments.min.js",
+      "require": "./dist/cjs/GithubComments.min.js",
+      "types": "./dist/types/GithubComments.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json && terser dist/cjs/GithubComments.js -o dist/cjs/GithubComments.min.js --compress --mangle && terser dist/esm/GithubComments.js -o dist/esm/GithubComments.min.js --compress --mangle"
+  },
+  "keywords": [
+    "react",
+    "github",
+    "utterances",
+    "comments",
+    "issue",
+    "social",
+    "comment-system",
+    "react-component",
+    "blog-comments",
+    "github-comments",
+    "static-site-comments",
+    "open-source-comments",
+    "documentation-comments",
+    "utterances-widget",
+    "react-github-comments",
+    "utterances-react",
+    "react-utterances"
+  ],
+  "author": "Percy Chuzon <contacto@percychuzon.com>",
+  "license": "MIT",
+  "homepage": "https://react-utterances-github-comments.percychuzon.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perch33/react-utterances-github-comments.git"
+  },
+  "bugs": {
+    "url": "https://github.com/perch33/react-utterances-github-comments/issues"
+  },
+  "dependencies": {
+    "terser": "^5.39.0"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.21",
+    "@types/react-dom": "^18.3.7",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}
