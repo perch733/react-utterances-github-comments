@@ -1,6 +1,6 @@
 {
   "name": "react-utterances-github-comments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight React wrapper for Utterances GitHub comment system",
   "main": "dist/cjs/GithubComments.min.js",
   "module": "dist/esm/GithubComments.min.js",
@@ -44,10 +44,10 @@
   "homepage": "https://react-utterances-github-comments.percychuzon.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/perch33/react-utterances-github-comments.git"
+    "url": "https://github.com/perch733/react-utterances-github-comments.git"
   },
   "bugs": {
-    "url": "https://github.com/perch33/react-utterances-github-comments/issues"
+    "url": "https://github.com/perch733/react-utterances-github-comments/issues"
   },
   "dependencies": {
     "terser": "^5.39.0"
